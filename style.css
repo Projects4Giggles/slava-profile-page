@@ -1,0 +1,28 @@
+html, body{
+	height: 100%;
+}
+.intro-div {
+	background-image:url("./img/intro-image-compressed.jpeg");
+	background-size:cover;
+	background-position: center center;
+	height:100%;
+	width:100%;
+	padding:0px;
+	background-repeat: no-repeat;
+	overflow:hidden;
+}
+.overlay {
+	width:100%;
+	height:100%;
+	background-color:black;
+	opacity: 0.6;
+	filter:alpha(opacity=60); /*ie 7 and earlier*/
+}
+
+.container-1 {
+	background-color:blue;
+}
+
+.container-2 {
+	background-color:green;
+}
