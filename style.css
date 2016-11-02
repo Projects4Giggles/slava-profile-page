@@ -1,5 +1,11 @@
-html, body{
+html,body{
 	height: 100%;
+	margin: 0 auto;
+}
+
+@font-face{
+	font-family: antonio-light;
+	src: url(./font/Antonio-Light.ttf);
 }
 .intro-div {
 	background-image:url("./img/intro-image-compressed.jpeg");
@@ -9,29 +15,205 @@ html, body{
 	width:100%;
 	padding:0px;
 	background-repeat: no-repeat;
-	overflow:hidden;
+	overflow: hidden;
 }
 
-.intro-div .overlay{
+.overlay{
+	margin: 0;
+	padding: 0;
 	width:100%;
-	height:100%;
+	height:100vh;
 	background-color:black;
-	opacity: 0.6;
-	filter:alpha(opacity=60); /*ie 7 and earlier*/
+	opacity: 0.75;
+	filter:alpha(opacity=70); /*ie 7 and earlier*/
+	position: absolute;
+	overflow: hidden;
+	
 }
 
 .title {
-	padding-top:18%;
+	position: relative;
+	top: 15%;
 }
 
 .name {
 	text-align: center;
-	font-family:'actor', sans-serif;
-	font-weight:;
-	font-size:8em;
 	color:white;
-	opacity:1;
-	filter:alpha(opacity=100);
 	padding:0px;
-	line-height: 120px;
+	
+}
+
+.name-font {
+	font-family:'actor', sans-serif;
+	letter-spacing: 0px;
+	font-size: 40px;
+	line-height: 60px;
+	margin-bottom: 15px;
+}
+
+.motto-font {
+	font-family: 'Six Caps',sans-serif;
+	letter-spacing: 10px;
+	font-size:35px;
+	line-height: 60px;
+	margin-bottom: 15px;
+}
+.name-hr {
+	border: none;
+	width: 30%;
+	height: 3px;
+	color: white;
+	background-color: white;
+	margin-bottom: 10px;
+}
+.nav-container{
+	width: 100%;
+	padding: 0px;
+	margin: 0 auto;
+}
+
+.nav-custom {
+	padding: 0px;
+	margin: 0px;
+	display: inline-block;
+}
+.nav-ul-custom {
+	text-align: center;
+	border: 1px solid white;
+}
+
+.nav-ul-custom>li {
+	font-family: antonio-light;
+	letter-spacing: 2.6px;
+	font-size: 15px;
+	line-height: 40px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 60px;
+	padding-right: 60px;
+	border-right: 1px solid white;
+
+}
+
+.nav-overlay {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: black;
+	opacity: 0.6;
+}
+
+.nav-ul-custom>li:hover{
+	background-color: white;
+	color: black;
+}
+.nav-link{
+	text-decoration: none;
+	color: white;
+}
+
+/*Small devices (landscape phones, 544px and up)*/
+@media (min-width: 544px) { 
+.title {
+	top: 20%;
+}
+.name-font{
+	font-size: 40px;
+	line-height: 60px;
+	margin-bottom: 15px;
+}
+
+.motto-font {
+	font-size:35px;
+	line-height: 60px;
+	margin-bottom: 15px;
+}
+
+.name-hr {
+	margin-bottom: 10px;
+}
+
+.nav-ul-custom>li {
+	font-size: 15px;
+	line-height: 40px;
+}
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+.title {
+	top: 30%;
+}
+.name-font{
+	font-size: 60px;
+	line-height: 90px;
+	margin-bottom: 20px;
+}
+
+.motto-font {
+	font-size: 45px;
+	line-height: 90px;
+	margin-bottom: 20px;
+}
+
+.name-hr {
+	margin-bottom: 20px;
+
+}
+
+.nav-ul-custom>li {
+	font-size: 20px;
+	line-height: 40px;
+}
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.name-font{
+	font-size: 80px;
+	line-height: 110px;
+	margin-bottom: 30px;
+}
+
+.motto-font {
+	font-size: 60px;
+	line-height: 110px;
+	margin-bottom: 30px;
+}
+
+.name-hr {
+
+}
+
+.nav-ul-custom>li {
+	font-size: 30px;
+	line-height: 40px;
+}
+
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.name-font {
+	font-size:100px;
+	margin-bottom: 30px;
+	line-height: 110px;
+}
+
+.motto-font {
+	font-size: 70px;
+	line-height: 110px;
+	margin-bottom: 30px;
+}
+.name-hr {
+	margin-bottom: 30px;
+}
+.nav-ul-custom>li {
+	line-height: 40px;
+	font-size: 30px;
+}
 }
