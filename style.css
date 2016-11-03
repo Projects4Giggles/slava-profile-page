@@ -144,8 +144,26 @@ html,body{
 #sec-footer {
 	height: 100%;
 	margin: 0 auto;
-	background-color: grey;
-	max-height: 700px;
+	background-image: url("./img/hands-coffee-cup.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-position: center center;
+	height: 700px;
+	padding: 0px;
+}
+
+.footer-overlay {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: black;
+	opacity: 0.8;
+	filter:alpha(opacity=60);
+	height: 700px;
+	overflow: hidden;
 }
 
 .btn-consult{
@@ -160,8 +178,8 @@ html,body{
 	font-size: 30px;
 	text-align: center;
 	margin: auto;
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 	padding-top: 2px;
 	padding-bottom: 5px;
 	padding-left: 60px;
@@ -220,13 +238,13 @@ html,body{
 .icons-social {
 	display: inline-block;
 	font-size: 40px;
-	color: black;
+	color: white;
 	margin: 20px;
 }
 
 
 .icons-social:hover {
-	color: white;
+	color: black;
 }
 
 .icons-social>a {
@@ -234,7 +252,17 @@ html,body{
 	background-color: inherit;
 	margin: 0px;
 	padding: 0px;
+	text-decoration: none;
 }
+
+.icons-social>a:hover {
+	color: inherit;
+	background-color: inherit;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+
 
 /****************MEDIA QUERIES START**************/
 /*************************************************/
