@@ -7,7 +7,21 @@ html,body{
 	font-family: antonio-light;
 	src: url(./font/Antonio-Light.ttf);
 }
-.intro-div {
+
+.clickable {
+    cursor:pointer; 
+}
+
+.nav>li>a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.nav>li>a:hover {
+	background-color: inherit;
+	color: inherit;
+}
+#sec-intro {
 	background-image:url("./img/intro-image-compressed.jpeg");
 	background-size:cover;
 	background-position: center center;
@@ -16,6 +30,7 @@ html,body{
 	padding:0px;
 	background-repeat: no-repeat;
 	overflow: hidden;
+	min-height: 600px;
 }
 
 .overlay{
@@ -28,6 +43,7 @@ html,body{
 	filter:alpha(opacity=70); /*ie 7 and earlier*/
 	position: absolute;
 	overflow: hidden;
+	min-height: 600px;
 	
 }
 
@@ -66,6 +82,7 @@ html,body{
 	background-color: white;
 	margin-bottom: 10px;
 }
+
 .nav-container{
 	width: 100%;
 	padding: 0px;
@@ -77,6 +94,7 @@ html,body{
 	margin: 0px;
 	display: inline-block;
 }
+
 .nav-ul-custom {
 	text-align: center;
 	border-top: 1px solid white;
@@ -90,10 +108,9 @@ html,body{
 	line-height: 40px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	padding-left: 60px;
-	padding-right: 60px;
+	padding-left: 39px;
+	padding-right: 39px;
 	/*border-right: 1px solid white;*/
-
 }
 
 .nav-overlay {
@@ -115,6 +132,114 @@ html,body{
 	color: white;
 }
 
+
+#sec-about-me {
+	margin: 0 auto;
+	max-width: 1440px;
+	height:100%;
+	max-height: 600px;
+	background-color: black;
+}
+
+#sec-footer {
+	height: 100%;
+	margin: 0 auto;
+	background-color: grey;
+	max-height: 700px;
+}
+
+.btn-consult{
+	width: 400px;
+	height: 45px;
+	color: white;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	font-family: antonio-light;
+	letter-spacing: 2.6px;
+	line-height: 40px;
+	font-size: 30px;
+	text-align: center;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding-top: 2px;
+	padding-bottom: 5px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.form-container{
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: white;
+}
+
+.form-control{
+	height: 50px;
+	font-family: antonio-light;
+	font-size: 17px;
+}
+
+.btn-submit {
+	border:1px solid white;
+	border-radius: 0px;
+	margin: auto;
+	width: 100px;
+	height: 45px;
+	font-size: 20px;
+	background-color: black;
+	color: white;
+}
+
+.btn-submit:hover {
+	background-color: white;
+	color: black;
+}
+
+.center {
+	margin: auto;
+	background-color: red;
+	width: 100px ;
+	padding: 0px;
+}
+
+.social-container{
+	width: 100%;
+	margin: auto;
+}
+
+.ul-social {
+	list-style: none;
+	width: 100%;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+.icons-social {
+	display: inline-block;
+	font-size: 40px;
+	color: black;
+	margin: 20px;
+}
+
+
+.icons-social:hover {
+	color: white;
+}
+
+.icons-social>a {
+	color: inherit;
+	background-color: inherit;
+	margin: 0px;
+	padding: 0px;
+}
+
+/****************MEDIA QUERIES START**************/
+/*************************************************/
+/*************************************************/
+/*************************************************/
 /*Small devices (landscape phones, 544px and up)*/
 @media (min-width: 544px) { 
 .title {
@@ -169,10 +294,9 @@ html,body{
 .nav-ul-custom>li {
 	font-size: 20px;
 	line-height: 40px;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 39px;
+	padding-right: 39px;
 }
-
 }
 
 /*Large devices (desktops, 992px and up)*/
