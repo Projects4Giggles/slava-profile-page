@@ -182,6 +182,18 @@ html,body{
 	margin:0px;
 }
 
+#sec-services {
+	height: 100%;
+	margin: 0 auto;
+	background-image: url("./img/hands-coffee-cup.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-position: center center;
+	height: 700px;
+	padding: 0px;
+}
+
 #sec-footer {
 	height: 100%;
 	margin: 0 auto;
